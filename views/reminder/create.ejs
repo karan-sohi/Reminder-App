@@ -1,0 +1,24 @@
+<div class="container">
+  <form action="/reminder" method="POST">
+    <div class="form-group">
+      <label for="title">Title</label>
+      <input type="text" class="form-control" id="titleInput" placeholder="Title" name="title">
+    </div>
+    <div class="form-group">
+      <label for="description">Description</label>
+      <textarea class="form-control" id="descriptionInput" rows="3" placeholder="Description" name="description"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="title">Tags</label>
+      <div class="next-line"></div>
+      <input type="text" class="form-control" data-role="tagsinput" placeholder="Tags" name="tag">
+    </div>
+    <div class="form-group">
+      <label class="control-label">Remind Me</label>
+      <div class="next-line"></div>
+      <input class="form-control" type="datetime-local" id="date-time" value="2022-01-01T13:11" name="date">
+   </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
+

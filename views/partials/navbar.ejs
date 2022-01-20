@@ -1,0 +1,24 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Reminder List</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <% if (typeof item == "undefined") { %>
+          <li><a href="/reminders">List All</a></li>
+          <li><a href="/reminder/new">Create</a></li>
+          <%} else if (item == "listAll") { %>
+            <li class="active"><a href="/reminders">List All</a></li>
+            <li><a href="/reminder/new">Create</a></li>
+          <% }
+          else if (item == "create")  { %> 
+            <li><a href="/reminders">List All</a></li>
+            <li class="active"><a href="/reminder/new">Create</a></li>
+          <%} %>
+      </ul>
+    </div>
+  </div>
+</nav>
